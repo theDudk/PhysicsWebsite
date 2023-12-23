@@ -312,7 +312,7 @@ body{
     left: 0;
     width: calc(100% - 2rem);
     margin: 1rem;
-    height: max-content;
+    /* height: max-content; */
     padding: 1rem;
     z-index: 2;
     /* display: flex;
