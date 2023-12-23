@@ -57,6 +57,17 @@
                 margin-top: 1rem;
                 font-size: 2rem;
             }
+
+            iframe{
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+                
+                border: 4px solid var(--dark);
+                border-radius: 8px;
+                padding-top: 1rem;
+                margin-inline: 1rem;
+            }
         </style>
 
         <link rel="icon" type="image/x-icon" href="images/susdog.jpeg">
@@ -85,15 +96,10 @@
                 <h1>Error: Question failed to load</h1>
                 <p>Try using the back arrow or reporting the question again...</p>
             </div>
-
-            <div id="form">
-                <h1>Overview</h1>
-                <input id="f-subject" type="text" placeholder="Please provide a very general overview..."><br>
-                <h1>Expand</h1>
-                <textarea id="f-body" name="body" rows="5" cols="30" placeholder="Please explain the problem with greater detail..."></textarea><br>
-                <button clickable="false" class="btn btn-large" id="f-submit">Submit <i class="btn-hover fa-solid fa-check"></i></button>
-            </div>
         </div>
+
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSctLWQqt_fKDxFnv4a25V-e9r6HMt8Ti67xpmxyiuZ_M7AM6w/viewform?embedded=true" width="640" height="623" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
 
         <!-- scripts past this point -->
         <script src="lessons.js"></script>
@@ -111,40 +117,6 @@
             document.querySelector("#question-text h1").textContent = getLessonName(pickedLessonIdx) + ": " + picked.name;
             document.querySelector("#question-text p").textContent = picked.text;
             document.querySelector("#question-text").setAttribute("loaded", "true")
-
-            document.querySelector("#f-submit").onclick = function(){
-                if(document.querySelector("#f-submit").getAttribute("clickable") == "false"){
-                    return;
-                };
-                window.location.href = getMailtoUrl("michael.d.aspinall@icloud.com", document.querySelector("#f-subject").value, "Issue from Question: " + formatQuestionPath(pickedLessonIdx, pickedQuestionIDx) + "\n\n" + document.querySelector("#f-body").value);
-            }
-
-            document.querySelector("#f-subject").setAttribute("oninput", "checkForm()")
-            document.querySelector("#f-body").setAttribute("oninput", "checkForm()")
-
-            function checkForm(){
-                if(document.querySelector("#f-subject").value.length > 0 && document.querySelector("#f-body").value.length > 0){
-                    document.querySelector("#f-submit").setAttribute("clickable", "true");
-                    return;
-                }
-                document.querySelector("#f-submit").setAttribute("clickable", "false");
-            }
-
-            function getMailtoUrl(to, subject, body) {
-                var args = [];
-                if (typeof subject !== 'undefined') {
-                    args.push('subject=' + "PHYS Issue: " + encodeURIComponent(subject));
-                }
-                if (typeof body !== 'undefined') {
-                    args.push('body=' + encodeURIComponent(body))
-                }
-
-                var url = 'mailto:' + encodeURIComponent(to);
-                if (args.length > 0) {
-                    url += '?' + args.join('&');
-                }
-                return url;
-            }
         </script>
         
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
