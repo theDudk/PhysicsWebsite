@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Bootstrap & Custom Stylesheets -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="icon" type="image/x-icon" href="images/susdog.jpeg">
+
+        <!-- lexend -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">    </head>
+    <body style="height: 100vh;">
+        <div id="header">
+            <div style="cursor: pointer;" onclick="window.location.href='index.html'">
+                <div class="logo">
+                    <i class="h-0 fa-solid fa-rocket"></i>
+                </div>
+                <h2 class="m-0 d-none d-sm-inline">Daily Physics</h2>
+            </div>
+            
+            <button class="btn btn-large me-2 btn-white-onhover" onclick="window.location.href='activity.html'">
+                Activity
+                <i class="btn-hover fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+
+        <div class="m-4 mb-0 bordered-box text-white" style="position:relative; background-color: var(--dark); border-color: var(--danger); box-shadow: 0.2rem 0.2rem var(--danger);">
+            <h3 class="ms-2">Additional Resources</h3>
+            <ul class="mb-0 custom-link" style="font-size: 1.5rem;">
+                <li><a class="custom-link" href="AdditionalResources/G11Checklist.docx">Checklist</a></li>
+                <li><a class="custom-link" href="AdditionalResources/G11Review.pdf">Review</a></li>
+                <li><a class="custom-link" href="AdditionalResources/G11ReviewAdd.doc">More Review</a></li>
+            </ul>
+        </div>
+
+        <div id="root"> 
+
+        </div>
+
+        <!-- scripts past this point -->
+        <script src="lessons.js"></script>
+        <script src="lessonPacks.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+
+        <!-- My FontAwesome kit -->
+        <script src="https://kit.fontawesome.com/e44e5ab538.js" crossorigin="anonymous"></script>
+    </body>
+</html>

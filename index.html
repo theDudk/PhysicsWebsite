@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Bootstrap & Custom Stylesheets -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="icon" type="image/x-icon" href="images/susdog.jpeg">
+
+        <!-- lexend -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">    </head>
+    <body style="height: 100vh;">
+        <div id="start-popup">
+            <div>
+                <div class="logo">
+                    <i class="h-0 fa-solid fa-rocket"></i>
+                </div>
+                
+                <h1>Daily Physics</h1>
+                <button id="start-btn" class="btn mt-2" onclick="document.querySelector('#start-popup').setAttribute('style', 'display:none;')">Start<i class="btn-hover fa-solid fa-circle-right"></i></button>
+                <button class="btn btn-outline mt-2" onclick="window.location.href = 'about.html'">About<i class="btn-hover fa-solid fa-arrow-right"></i></button>
+                <button class="btn btn-outline mt-2" onclick="window.location.href='lessonPacks.html'">Lesson Packs<i class="btn-hover fa-solid fa-arrow-right"></i></button>
+                <button class="btn btn-outline mt-2" onclick="window.location.href='activity.html'"> Activity<i class="btn-hover fa-solid fa-arrow-right"></i></button>
+                <p id="date" class="lead mt-3">October 28, 2023</p>
+            </div>
+        </div>
+
+        <div id="confirm-popup" class="popup" style="display: none;">
+            <div>
+                <h1 class="mb-3">Are you sure?</h1>
+                <div class="btns">
+                    <button class="btn btn-large btn-danger-onhover" onclick="{document.querySelector('.popup').setAttribute('style', 'display: none;'); revealAnswer()}">Yes <i class="btn-hover fa-solid fa-triangle-exclamation"></i></button>
+                    <button class="btn btn-large" onclick="document.querySelector('.popup').setAttribute('style', 'display: none;');">No</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="revealed-answer" class="popup popup-white" style="display: none;">
+            <div id="revealed-answer-content">
+                <h1 class="mb-3 lead" id="revealed-answer-answer">The answer is: </h1>
+                <h1 class="mb-3 lead" id="revealed-answer-source">Source: </h1>
+                <div class="btns">
+                    <button id="revealed-answer-next" class="btn btn-large" onclick="">Skip <i class="btn-hover fa-solid fa-arrow-right"></i></button>
+                    <button id="report-revealed" class="btn btn-large btn-danger-onhover" onclick="document.querySelector('#revealed-answer').setAttribute('style', 'display: none;');localStorage.setItem('{'+pickedLessonIdx+','+pickedQuestionIDx+'}', '-1'); localStorage.setItem('lastAskedIdx', parseInt(localStorage.getItem('lastAskedIdx')) - 2); reportSpecQuestion(pickedLessonIdx, pickedQuestionIDx); nextQuestion();">Report <i class="btn-hover fa-solid fa-bullhorn"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div id="header">
+            <div id="header-logo" style="cursor: pointer;" onclick="document.querySelector('#start-popup').setAttribute('style', 'display:fixed;')">
+                <div class="logo">
+                    <i class="h-0 fa-solid fa-rocket"></i>
+                </div>
+                <h2 class="m-0 d-none d-sm-inline">Daily Physics</h2>
+            </div>
+            
+            <button class="btn btn-large me-2 btn-white-onhover" onclick="window.location.href='lessonPacks.html'">
+                Lesson packs
+                <i class="btn-hover fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+
+        <div id="root"></div>
+
+        <div id="result-div" class="row g-2" style="display: none;">
+            <div id="result-container" class="col-12 col-lg-10">
+                <h1 id="result">Correct!</h1>
+                <p class="lead" id="result-subtitle">Answer: <span class="mark">1.3 * 10^2</span></p>
+            </div>
+            <div id="prompt-container" class="col-12 col-lg-2">
+                <button id="prompt" class="btn btn-large me-2 btn-white-onhover float-left float-lg-right">
+                    Practice More
+                    <i class="btn-hover fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <button id="report" style="position: fixed; right: 1.5rem; bottom: 1.5rem; z-index: 0;" class="btn btn-danger-onhover btn-large">Report <i class="btn-hover fa-solid fa-bullhorn"></i></button>
+        <!-- style set in js -->
+        <div id="formula-sheets" >
+            <button class="btn" onclick="window.open('images/FormulaSheets/G11AP.pdf','_blank');"><i class="fa-solid fa-building-columns"></i></button>
+            <button class="btn mt-1" onclick="window.open('images/FormulaSheets/G11Normal.pdf','_blank');"><i class="fa-solid fa-square-root-variable"></i></button>
+        </div>
+
+        <!-- scripts past this point -->
+        <!-- seedrandom credit: https://github.com/davidbau/seedrandom -->
+        <script src="seedrandom.min.js"></script>
+        <script src="lessons.js"></script>
+        <script src="script.js"></script>
+        <script>
+            let reportBtn = document.querySelector("#report")
+            reportBtn.onclick = reportQuestion;
+            
+            function reportQuestion(){
+                window.location.href='reportForm.html?question={' + pickedLessonIdx + "," + pickedQuestionIDx + "}";
+            }
+            function reportSpecQuestion(LessonIdx, QuestionIdx){
+                setTimeout(function(){
+                    window.location.href='reportForm.html?question={' + LessonIdx + "," + QuestionIdx + "}";
+                }, 10)
+            }
+
+            if(document.querySelector("#image-toggle") != null){
+                document.querySelector("#formula-sheets").setAttribute("style", "position:fixed; left: 1rem; bottom: 4.2rem; display: flex; flex-direction: column; width: 3rem; z-index: 0;");
+            } else {
+                document.querySelector("#formula-sheets").setAttribute("style", "position:fixed; left: 1rem; bottom: 1rem; display: flex; flex-direction: column; width: 3rem; z-index: 0;");
+                
+            }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+
+        <!-- My FontAwesome kit -->
+        <script src="https://kit.fontawesome.com/e44e5ab538.js" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Bootstrap & Custom Stylesheets -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            #field{
+                padding: 1rem;
+            }
+            #question-text{
+                border: 4px solid var(--dark);
+                border-radius: 8px;
+                padding: 0.5rem;
+                margin-bottom: 1rem;
+            }
+            #question-text[loaded="false"]{
+                background-color: var(--danger-light);
+            }
+            #question-text *{
+                margin: 0;
+            }
+            #question-text p{
+                font-size: 1rem;
+            }
+            #question-text h1{
+                font-size: 1.3rem;
+            }
+
+            #form{
+                font-size: 1.2rem;
+            }
+
+            input, textarea{
+                border: 4px solid var(--dark);
+                border-radius: 8px;
+                color: var(--dark);
+                padding: 0.2rem;
+                background-color: var(--white);
+                transition: box-shadow 250ms;
+                outline: none!important;
+                color: var(--dark);
+                width:100%;
+            }
+            ::placeholder{
+                color: var(--dark2);
+            }
+            input:focus, textarea:focus{
+                box-shadow: inset 4px 4px var(--grey);
+            }
+
+            h1{
+                margin: 0;
+                margin-bottom: 0.2rem;
+                margin-top: 1rem;
+                font-size: 2rem;
+            }
+        </style>
+
+        <link rel="icon" type="image/x-icon" href="images/susdog.jpeg">
+
+        <!-- lexend -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">    </head>
+    <body style="height: 100vh;">
+        <div id="header">
+            <div>
+                <div class="logo">
+                    <i class="fa-solid fa-bullhorn fa-xs"></i>
+                </div>
+                <h2 id="report-question" class="m-0 d-none d-sm-inline">Report Question</h2>
+            </div>
+            
+            <button class="btn btn-large me-2 btn-white-onhover" onclick="window.location.href='index.html'">
+                Go Back
+                <i class="btn-hover fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+
+        <div id="field">
+            <div id="question-text" loaded="false">
+                <h1>Error: Question failed to load</h1>
+                <p>Try using the back arrow or reporting the question again...</p>
+            </div>
+
+            <div id="form">
+                <h1>Overview</h1>
+                <input id="f-subject" type="text" placeholder="Please provide a very general overview..."><br>
+                <h1>Expand</h1>
+                <textarea id="f-body" name="body" rows="5" cols="30" placeholder="Please explain the problem with greater detail..."></textarea><br>
+                <button clickable="false" class="btn btn-large" id="f-submit">Submit <i class="btn-hover fa-solid fa-check"></i></button>
+            </div>
+        </div>
+
+        <!-- scripts past this point -->
+        <script src="lessons.js"></script>
+        <script>
+            function formatQuestionPath(lessonI, questionI){
+                return "{" + lessonI + "," + questionI + "}";
+            }
+
+            const targetQuestion = new URLSearchParams(window.location.search).get("question");
+
+            pickedLessonIdx = targetQuestion.substring(1, targetQuestion.indexOf(","));
+            pickedQuestionIDx = targetQuestion.substring(targetQuestion.indexOf(",") + 1, targetQuestion.length - 1);
+            picked = lessons[pickedLessonIdx][0][pickedQuestionIDx];
+
+            document.querySelector("#question-text h1").textContent = getLessonName(pickedLessonIdx) + ": " + picked.name;
+            document.querySelector("#question-text p").textContent = picked.text;
+            document.querySelector("#question-text").setAttribute("loaded", "true")
+
+            document.querySelector("#f-submit").onclick = function(){
+                if(document.querySelector("#f-submit").getAttribute("clickable") == "false"){
+                    return;
+                };
+                window.location.href = getMailtoUrl("michael.d.aspinall@icloud.com", document.querySelector("#f-subject").value, "Issue from Question: " + formatQuestionPath(pickedLessonIdx, pickedQuestionIDx) + "\n\n" + document.querySelector("#f-body").value);
+            }
+
+            document.querySelector("#f-subject").setAttribute("oninput", "checkForm()")
+            document.querySelector("#f-body").setAttribute("oninput", "checkForm()")
+
+            function checkForm(){
+                if(document.querySelector("#f-subject").value.length > 0 && document.querySelector("#f-body").value.length > 0){
+                    document.querySelector("#f-submit").setAttribute("clickable", "true");
+                    return;
+                }
+                document.querySelector("#f-submit").setAttribute("clickable", "false");
+            }
+
+            function getMailtoUrl(to, subject, body) {
+                var args = [];
+                if (typeof subject !== 'undefined') {
+                    args.push('subject=' + "PHYS Issue: " + encodeURIComponent(subject));
+                }
+                if (typeof body !== 'undefined') {
+                    args.push('body=' + encodeURIComponent(body))
+                }
+
+                var url = 'mailto:' + encodeURIComponent(to);
+                if (args.length > 0) {
+                    url += '?' + args.join('&');
+                }
+                return url;
+            }
+        </script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+
+        <!-- My FontAwesome kit -->
+        <script src="https://kit.fontawesome.com/e44e5ab538.js" crossorigin="anonymous"></script>
+    </body>
+</html>
