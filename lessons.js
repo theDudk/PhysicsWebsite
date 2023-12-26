@@ -623,7 +623,7 @@ let lessons = [
         new NumQuestion("Practice 2", "You are on a planet whose radius is known to be about 4500 km. You then perform the following experiment: You drop a rock from a height of 10.0 m and measure the time of its fall to be 2.65 s. What is the mass of the planet?", false, ["* 10^23 kg", "8.65"]),
         new NumQuestionIMG("Assignment 1", "Calculate the acceleration due to gravity on Jupiter.", false, "images/L21/1.png", ["m/s^2", "24"]),
         new NumQuestionIMG("Assignment 2", "If a man weighs 780 N on Earth, what would he weigh on the moon?", false, "images/L21/1.png", ["N", "129"]),
-        new NumQuestionIMG("Assignment 3", "The instrument payload of a rocket weighs 890 N on Earth. What does it weigh at an altitude of 25520 km above the surface of the Earth? ", false, "images/L21/1.png", ["N", "35.3"]),
+        new NumQuestionIMG("Assignment 3", "The instrument payload of a rocket weighs 890 N on Earth. What does it weigh at an altitude of 25520 km above the surface of the Earth? ", false, "images/L21/1.png", ["N", "35.6"]),
         new NumQuestionIMG("Assignment 4", "Calculate the acceleration due to gravity on Saturn. How much will a 60.0 kg man weigh on the surface of Saturn?", false, "images/L21/1.png", ["m/s^2", "10.4"], ["N", "624"]),
         new NumQuestionIMG("Assignment 5", "At the top of Mt. Robson in British Columbia, a 7.50 kg turkey weighs 72.6 N. Calculate the magnitude of the gravitational field strength at this location. ", false, "images/L21/1.png", ["N/kg", "9.68"]),
     ], true],
