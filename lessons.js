@@ -614,7 +614,7 @@ let lessons = [
         new NumQuestion("Assignment 6", "Two metal spheres each have mass of 3.0 x 10^8 kg. If the gravitational force of attraction between them is 37.5 N, what is the distance between their centers of mass?", false, ["* 10^2 m", "4.0"]),
         new NumQuestion("Assignment 7", "Two masses are set 500 m apart. One mass has 5 times the mass of the other. If the gravitational force of attraction between them is 333.5 N, what is the magnitude of each mass? (small than big)", false, ["* 10^8 kg", "5.0"], ["*10^9 kg", "2.5"]),
         new NumQuestionIMG("Assignment 8", "If you were to place yourself between the moon and the Earth, how far away from the Earth would you have to be in order that the net force on you is zero? (3 SigDigs)", true, "images/L21/1.png", ["*10^8 m", "3.51"]),
-    ], false],
+    ], true],
     // lesson 22
     [[
         new NumQuestionIMG("Example 1", "What is the gravitational field strength on the surface of Neptune? (4 SigDigs)", false, "images/L21/1.png", ["N/kg", "11.17"]),
