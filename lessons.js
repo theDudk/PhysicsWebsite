@@ -537,7 +537,7 @@ let lessons = [
         new NumQuestion("Example 2", "A rope is attached to a 50 kg mass. What is the tension force required to lift the mass upward at a constant speed?", false, ["* 10^2 N [up]", "4.9"]),
         new NumQuestion("Example 3", "A rope is attached to a 50 kg mass. If an upward force of 280 N is applied on the rope, what is the resulting motion of the mass?", false, ["m/s^2", "4.2"]),
         new NumQuestion("Example 4", "If you normally weigh 706 N, what is your apparent weight if you are in an elevator that is slowing down at the rate of 1.65 m/s^2?", false, ["N", "587"]),
-        new NumQuestion("Example 5", "A 1200 kg rocket produces 30000 N of thrust. What is the velocity of the rocket 45 s after launch?", false, ["* 10^2 m/s [up]", "6.9"]),
+        new NumQuestion("Example 5", "A 1200 kg rocket produces 30000 N of thrust. What is the velocity of the rocket 45 s after launch?", false, ["* 10^2 m/s [up]", "6.8"]),
         new NumQuestion("Example 6", "A 30 kg object is on an inclined plane set at 40° to the horizontal. What is the acceleration experienced by the object if the coefficient of friction is 0.25?", false, ["m/s [down the incline]", "4.4"]),
         new NumQuestion("Practice 1", "A 490 N object is suspended from a rope. What is the force required to raise it vertically at 5.00 m/s? What is the force required to accelerate it down at 3.00 m/s^2?", false, ["N", "490"], ["N", "340"]),
         new NumQuestion("Practice 2", "A 20.0 kg mass is placed on a 50° incline. If the coefficient of friction is 0.35, what is the acceleration of the mass?", false, ["m/s^2", "5.3"]),
