@@ -764,7 +764,7 @@ let lessons = [
     ], true],
     // lesson 29
     [[
-        new NumQuestion("Example 1", "A series of waves with a wavelength of 2.5 m have a frequency of 50 Hz. What is the speed if the wave series?", false, ["m/s", "1.3"]),
+        new NumQuestion("Example 1", "A series of waves with a wavelength of 2.5 m have a frequency of 50 Hz. What is the speed if the wave series?", false, ["* 10^2 m/s", "1.3"]),
         new NumQuestion("Example 2", "A wave series with a wavelength of 10 m has a speed of 300 m/s. What is the frequency of the waves?", false, ["Hz", "30"]),
         new MultipleChoiceQuestionIMG("Assignment 2a", "What point is a crest", false, "images/L29/1.png", ["A", false], ["B", true], ["C", false], ["D", false]),
         new MultipleChoiceQuestionIMG("Assignment 2b", "What point is a trough", false, "images/L29/1.png", ["A", false], ["B", false], ["C", false], ["D", true]),
