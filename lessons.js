@@ -824,7 +824,7 @@ let lessons = [
         new NumQuestion("Assignment 5", "The third resonant length of a closed air column is 75 cm. Determine the first and second resonant lengths", false, ["cm", '15'], ["cm", "45"]),
         new NumQuestion("Assignment 6", "What is the shortest closed air column that will resonate at a frequency of 440 Hz when the speed of sound is 352 m/s?", false, ["cm", "20.0"]),
         new NumQuestion("Assignment 7", "The second resonant length of an air column open at both ends is 48 cm. Determine the first and third resonant lengths. ", false, ["cm", "24"], ["cm", "72"]),
-        new NumQuestion("Assignment 8", "An organ pipe, open at both ends, resonates at its first resonant length with a frequency of 128 Hz. What is the length of the pipe if the speed of sound is 346 m/s?", false, ["cm", '1.35']),
+        new NumQuestion("Assignment 8", "An organ pipe, open at both ends, resonates at its first resonant length with a frequency of 128 Hz. What is the length of the pipe if the speed of sound is 346 m/s?", false, ["cm", '135']),
     ], true],
     // lesson 32
     [[
