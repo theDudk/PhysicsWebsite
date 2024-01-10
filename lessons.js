@@ -307,7 +307,7 @@ let lessons = [
         new NumQuestion("Example 3", "An object travelling at 60 km/h will travel how far in a 20 minute time interval?", false, ["km", "20"]),
         new NumQuestion("Example 4", "How much time is required for an object travelling at 50 m/s to travel a distance of 6.0km?", false, ["* 10^2 s", "1.2"]),
         new NumQuestion("Example 5", "Convert 40.0 km/h into m/s.", false, ["m/s", "11.1"]),
-        new NumQuestion("Example 6", "An airplane travels 1800 km at a speed of 1000 km/h. It then encounters a headwind that slows the plane to 850 km/h for the next 2300 km. What was the plane’s average speed?", false, ["km/h", "911"]),
+        new NumQuestion("Example 6", "An airplane travels 1800 km at a speed of 1000 km/h. It then encounters a headwind that slows the plane to 850 km/h for the next 2300 km. What was the plane’s average speed?", false, ["km/h", "910"]),
         new NumQuestion("Example 7", "Two roller bladers, A and B, are having a race. B gives A a head start of 5.0 s. Each roller blader moves with a constant speed in the same direction. If A travels at 5.0 m/s and B travels at 7.5 m/s: How long will it take for B to catch A? At what position will B catch up with A?", true, ["s", "15"], ["m", "75"]),
         new NumQuestion("Practice 1", "If an object can travel at 30 m/s, how long will it take for the object to travel 700 cm?", false, ["s", "0.23"]),
         new NumQuestion("Practice 2", "You run 100 m at a speed of 5.0 m/s and then you walk 100 m at a speed of 1.0 m/s. What was your average speed?", false, ["m/s", "1.7"]),
