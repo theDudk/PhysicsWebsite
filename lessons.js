@@ -400,7 +400,7 @@ let lessons = [
     // lesson 9
     [[
         new NumQuestion("Example 1", "A rock is thrown up from a 20.0 m high cliff with an initial velocity of +35.0 m/ s. How long does it take for the rock to hit the ground below?", false, ["s", "7.67"]),
-        new NumQuestion("Practice Problems 1", "A rock is thrown downward from a cliff at 15.0 m/ s. The rock hits the waves below after 2.45 s. What was the height of the cliff? What was its velocity after 2.0 s?", false, ["m", "66.1"],["m/s down", "34.6"]),
+        new NumQuestion("Practice Problems 1", "A rock is thrown downward from a cliff at 15.0 m/s. The rock hits the waves below after 2.45 s. What was the height of the cliff? What was its velocity after 2.0 s?", false, ["m", "66"],["m/s down", "35"]),
         new NumQuestion("Practice Problems 2", "A rock is thrown upward with a speed of 20 m/s from a 45.0 m cliff. How long will it take for the rock to reach the bottom of the cliff?", false, ["s", "5.7"]),
         new NumQuestion("Assignment 1", "A ball is thrown upward with an initial velocity of 35.0 m/s. What is the velocity after three seconds? Velocity after five seconds? maximum height the ball reachs?", false, ["m/s [up]", "5.57"],["m/s [down]", "14.1"],["m [+]", "62.4"]),
         new NumQuestion("Assignment 2", "A ball traveling at 50 m/s begins to roll up an inclined plane before coming to rest. The ball comes to a stop 80.0 m up the incline. What was the velocity of the ball 2.5 s after starting up the incline?", false, ["m/s [up the incline]", "11"]),
