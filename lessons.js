@@ -437,15 +437,15 @@ let lessons = [
     //lesson 11
     [[
         new NumQuestion("Example 1", "Calculate the west and south components for the acceleration 25.0 m/s^2 [215°].", false, ["m/s^2 [W]", "20.5"],["m/s^2 [S]", "14.3"]),
-        new NumQuestion("Example 2", "A man walks 40 m [30° N of E], then 70 m [60° S of E], and finally 20 m [45° N of W]. What is the displacement of the man?", false, ["m [64.5° E of S]", "62"]),
+        new NumQuestion("Example 2", "A man walks 40 m [30° N of E], then 70 m [60° S of E], and finally 20 m [45° N of W]. What is the displacement of the man?", false, ["m [64.5° E of S]", "61"]),
         new NumQuestion("Practice Problems 1", "A turtle walks 60 m [210°], then 50 m [45° W of N] and then 60 m [0.0°]. What was the turtle’s final displacement?", false, ["m [11° N of W]", "28"]),
         new NumQuestion("Assignment 1A", "Calculate the east-west and north-south components for 25 m/s [40° E of N].", false, ["m/s [E]", "16"],["m/s [N]", "19"]), 
         new NumQuestion("Assignment 1B", "Calculate the east-west and north-south components for 16 m/s^2 [20° S of W].", false, ["m/s^2 [W]", "15"],["m/s^2 [S]", "5.5"]),
-        new NumQuestion("Assignment 1C", "Calculate the east-west and north-south components for 45 km [15° N of E].", false, ["km [E]", "44"],["km [N]", "12"]),
+        new NumQuestion("Assignment 1C", "Calculate the east-west and north-south components for 45 km [15° N of E].", false, ["km [E]", "43"],["km [N]", "12"]),
         new NumQuestion("Assignment 2", "A woman walks 440 m [50° S of W] and then 580 m [60° N of E ]. The entire trip required 15 minutes. What was the total distance travelled? What was the displacement of the woman? What was the average speed of the woman in m/min?", false, ["* 10^3 m", "1.0"],["* 10^2 m [2.5° E of N]", "1.7"],["m/min", "68"]),
         new NumQuestion("Assignment 4", "A boy runs at 5.0 m/s [30° S of W] for 2.5 minutes and then he turns and runs at 3.0 m/s [40° S of E] for 4.5 minutes. What was his average speed? What was his displacement?", false, ["m/s", "3.7"], ["* 10^2 m [1.9° W of S ]", "9.0"]),
         new NumQuestion("Assignment 5", "A man walks 600 m [47° N of E], then 500 m [38° W of N], then 300 m [29° S of W], and finally 400 m [13° E of S]. Find his resultant displacement.", false, ["* 10^2 m [13° W of N]", "3.1"]),
-        new NumQuestion("Assignment 6", "A slightly disoriented homing pigeon flies the following course in the following order at a constant speed of 15 m/s: 800 m [37° E of N], 300 m due west, and 400 m [37° S of E].", true, ["* 10^2 m [38° N of E]", "6.4"]),
+        new NumQuestion("Assignment 6", "A slightly disoriented homing pigeon flies the following course in the following order at a constant speed of 15 m/s: 800 m [37° E of N], 300 m due west, and 400 m [37° S of E]. What is its final displacement?", true, ["* 10^2 m [38° N of E]", "6.4"]),
         new NumQuestion("Assignment 7", "An airplane is climbing at an angle of 15° to the horizontal with the sun directly overhead. The shadow of the airplane is observed to be moving across the ground at 200 km/h. (a) What is the actual airspeed of the plane? (b) How long does it take for the plane to increase its altitude by 1000 m?", false, ["* 10^2 km/h", "2.1"], ["min", "1.1"]),
     ], true],
     //lesson 12
@@ -535,8 +535,8 @@ let lessons = [
     [[
         new NumQuestion("Example 1", "A rope is attached to a 50 kg mass. What is the tension force required to accelerate the mass upward at 2.0 m/s^2?", false, ["* 10^2 N [up]", "5.9"]),
         new NumQuestion("Example 2", "A rope is attached to a 50 kg mass. What is the tension force required to lift the mass upward at a constant speed?", false, ["* 10^2 N [up]", "4.9"]),
-        new NumQuestion("Example 3", "A rope is attached to a 50 kg mass. If an upward force of 280 N is applied on the rope, what is the resulting motion of the mass?", false, ["m/s^2", "4.2"]),
-        new NumQuestion("Example 4", "If you normally weigh 706 N, what is your apparent weight if you are in an elevator that is slowing down at the rate of 1.65 m/s^2?", false, ["N", "587"]),
+        new NumQuestion("Example 3", "A rope is attached to a 50 kg mass. If an upward force of 280 N is applied on the rope, what is the resulting motion of the mass?", false, ["m/s^2 [Up]", "-4.2"]),
+        new NumQuestion("Example 4", "If you normally weigh 706 N, what is your apparent weight if you are in an elevator that is slowing down at the rate of 1.65 m/s^2 and the elevator is moving a) up? b) down?", false, ["N", "587"], ["N", "825"]),
         new NumQuestion("Example 5", "A 1200 kg rocket produces 30000 N of thrust. What is the velocity of the rocket 45 s after launch?", false, ["* 10^2 m/s [up]", "6.8"]),
         new NumQuestion("Example 6", "A 30 kg object is on an inclined plane set at 40° to the horizontal. What is the acceleration experienced by the object if the coefficient of friction is 0.25?", false, ["m/s [down the incline]", "4.4"]),
         new NumQuestion("Practice 1", "A 490 N object is suspended from a rope. What is the force required to raise it vertically at 5.00 m/s? What is the force required to accelerate it down at 3.00 m/s^2?", false, ["N", "490"], ["N", "340"]),
