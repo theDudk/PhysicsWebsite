@@ -477,7 +477,7 @@ let lessons = [
         new NumQuestion("Practice 2", "A quarterback throws a football at 15 m/s at 40° to the horizontal. What is the maximum height of the ball? What is the range?", false, ["m", "4.7"], ["m", "23"]),
         new NumQuestion("Assignment 3", "A man is standing on the edge of the roof of a building that is 828.1 m high. If he throws an object horizontally from the roof at 12 m/s, how far from the base of the building does the object land?", false, ["* 10^2 m", "1.6"]),
         new NumQuestion("Assignment 4", "A man standing at the edge of a cliff throws a stone horizontally at 40 m/s. The stone lands 360 m from the base of the cliff. How high is the cliff? ", false, ["* 10^2 m", "4.0"]),
-        new NumQuestion("Assignment 5", "A baseball is thrown at 30° above the horizontal with a speed of 49.0 m/s. How long does it take for the ball to reach its maximum height? What is the maximum height? How long is the baseball in the air? What is the maximum range of the baseball?", false, ["s", "2.5"], ["m", "3.1"], ["s", "5.0"], ["* 10^2 m", "2.1"]),
+        new NumQuestion("Assignment 5", "A baseball is thrown at 30° above the horizontal with a speed of 49.0 m/s. How long does it take for the ball to reach its maximum height? What is the maximum height? How long is the baseball in the air? What is the maximum range of the baseball?", false, ["s", "2.5"], ["m", "31"], ["s", "5.0"], ["* 10^2 m", "2.1"]),
         new NumQuestion("Assignment 6", "If a stone is thrown at 60° above the horizontal with a speed of 196 m/s, what is the maximum height and the range?", false, ["* 10^3 m", "1.5"], ["* 10^3 m", "3.4"]),
         new NumQuestion("Assignment 7", "An airplane is flying level at 80.0 m above the ground with a speed of 350 km/h. The bombardier wishes to drop food and medical supplies to hit a target on the ground. At what horizontal distance from the target should the bombardier release the supplies?", false, ["m", "393"]),
         new NumQuestion("Assignment 8", "A ball is thrown horizontally from a window at 10 m/s and hits the ground 5.0 s later. What is the height of the window and how far from the base of the building does the ball first hit?", false, ["* 10^2 m", "1.2"], ["m", "50"]),
@@ -488,7 +488,7 @@ let lessons = [
     ], true],
     // lesson 14 & 15
     [[
-        new NumQuestion("Example 2", "What is the mass and weight of a 30 kg object located on the surface of the Earth and on the Moon (g_moon = 1.61 m/s^2)?", false, ["* 10^2 N [down]", "3.0"], ["N [down]", "48"]),
+        new NumQuestion("Example 2", "What is the mass and weight of a 30 kg object located on the surface of the Earth and on the Moon (g_moon = 1.61 m/s^2)?", false, ["* 10^2 N [down]", "2.9"], ["N [down]", "48"]),
         new NumQuestion("Example 3", "For a 60 kg mass, if the frictional force is 40 N, what applied force is required to acce lerate the object at 4.0 m/s^2 ?", false, ["* 10^2 N", "2.8"]),
         new NumQuestion("Example 4", "Two ice skaters, Jim (60 kg) and Bob (40 kg) are standing facing other. When Jim pushes on Bob, Bob’s acceleration is 2.0 m/s^2 east. Assuming that the frictional forces are negligible, what is Jim’s acceleration?", false, ["m/s^2 [West]", "1.3"]),
         new NumQuestion("Example 5", "A 2.0 kg object experiences a 15 N force pulling south, a 25 N force pulling west an d a 20 N force pulling at 30° S of E. What is the acceleration experienced by the object?", false, ["m/s^2 [17.1° W of S]", "13"]),
