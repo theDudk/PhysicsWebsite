@@ -565,7 +565,7 @@ let lessons = [
         new NumQuestion("Example 3", "If the frequency of rotation for an object is 4.0 Hz, what is its period of rotation?", false, ["s", "0.25"]),
         new NumQuestion("Example 4", "If an object travelling in a circle with a radius of 5.0 m has a frequency of 6.0 Hz, what is the speed of the object?", false, ["* 10^2 m/s", "1.9"]),
         new NumQuestion("Example 5", "If the centripetal acceleration on a stone being whirled in a circle at the end of a 1.75 m string is 350 m/s2, what is the frequency of rotation?", false, ["Hz", "2.25"]),
-        new NumQuestion("Example 6", "A 1000 kg car enters an unbanked curve of 80 m radius. If the coefficient of friction between the pavement and the car tires is 0.51, what is the maximum speed which the car can go around the curve?", false, ["* 10^3 N", "5.0"]),
+        new NumQuestion("Example 6", "A 1000 kg car enters an unbanked curve of 80 m radius. If the coefficient of friction between the pavement and the car tires is 0.51, what is the maximum speed which the car can go around the curve?", false, ["m/s", "20"]),
         new NumQuestion("Practice 1", "A 5.00 kg object is attached to a rope. What is the tension in the rope if the object is travelling at 6.0 m/s in a circle with a radius of 4.50 m?", false, ["N", "40"]),
         new NumQuestion("Practice 2", "If a centripetal force of 80.0 N causes a 6.00 kg object to travel in a circle once every 0.75 s, what is the radius of the circle? What is the speed of the object?", false, ["m", "0.19"], ["m/s", "1.6"]),
         new NumQuestion("Practice 3", "A force of 45.0 N causes an object to travel in a circle with a diameter of 7.50 m with a frequency of 0.60 Hz. What is the mass of the object?", false, ["kg", '0.84']),
