@@ -600,19 +600,19 @@ let lessons = [
     [[
         new NumQuestion("Example 1", "What is the gravitational force of attraction between a tanker (m = 50000 kg) and a super-tanker (m = 150000 kg) when they are separated by a distance of 500 m?", false, ["* 10^-6 N", "2.00"]),   
         new NumQuestion("Example 2", "Two very dense objects have masses of 5.0 x 10^8 kg and 6.0 x 10^8 kg. If the force of attraction between them is 500 N, what is the separation distance between their centres of mass?", false, ["* 10^2 m", "2.0"]),
-        new NumQuestion("Example 3", "A person with a mass of 100 kg has a weight of 981 N on the surface of the Earth. What is the person’s weight at a height of 12000 m above the surface of the Earth?", false, ["N", "979"]),
+        new NumQuestion("Example 3", "A person with a mass of 100 kg has a weight of 981 N on the surface of the Earth. What is the person’s weight at a height of 12000 m above the surface of the Earth?", false, ["N", "978"]),
         new NumQuestion("Example 4", "If the attractive force between two masses is 9.0 x 10^-6 N and the distance between them is 50 m, what is the mass of each object if one is three times more massive than the other?", false, ["* 10^4 kg", "1.1"], ["* 10^4 kg", "3.2"]),
         new NumQuestion("Example 5", "When two masses are set a certain distance apart, a force of 8.0 N exists. What is the force between the two masses if the distance between them is doubled and one of the masses is tripled?", false, ["N", "6.0"]),
         new NumQuestion("Practice 1", "Bob (mass = 85.0 kg) and Jane (mass = 60.0 kg) are sitting 1.85 m apart. What is the gravitational force of attraction between them?", false, ["* 10^-8N", "9.94"]),
         new NumQuestionIMG("Practice 2", "What is the force of attraction between Mercury and the Sun. (3 sigdigs)", false, "images/L21/1.png", ["* 10^22 N", "1.29"]),
         new NumQuestion("Practice 3", "The force between two objects is measured to be 45.0 N. What is the force if one of the masses is tripled, the other doubled and the distance between them is halved?", false, ["* 10^3 N", "1.08"]),
         new NumQuestion("Assignment 1", "What is the force of gravitational attraction between two 1.8 x 10^8 kg super-tankers moored so that their centres are located 94 m apart?", false, ["* 10^2 N", "2.4"]),
-        new NumQuestionIMG("Assignment 2", "A woman standing on the surface of the Earth, 6.38 x 10^6 m from its centre, has a mass of 50.0 kg. If the mass of the Earth is 5.98 x 10^24 kg, what is the force of gravity on the woman?", false, "images/L21/1.png", ["* 10^2 N", "4.9"]),
+        new NumQuestionIMG("Assignment 2", "A woman standing on the surface of the Earth, 6.38 x 10^6 m from its centre, has a mass of 50.0 kg. If the mass of the Earth is 5.98 x 10^24 kg, what is the force of gravity on the woman?", false, "images/L21/1.png", ["* 10^2 N", "4.90"]),
         new NumQuestion("Assignment 3", "The force of gravitational attraction between two masses is 36 N. What will be the force if one mass is doubled and the distance between them is tripled? ", false, ["N", "8.0"]),
-        new NumQuestionIMG("Assignment 4", "If the force of gravity on a mass is 600 N on Earth, what will it be on Mars?", false, "images/L21/1.png", ["* 10^2 N", "2.2"]),
+        new NumQuestionIMG("Assignment 4", "If the force of gravity on a mass is 600 N on Earth, what will it be on Mars?", false, "images/L21/1.png", ["* 10^2 N", "2.21"]),
         new NumQuestion("Assignment 5", "A 70 kg boy stands 0.10 m from a 60 kg girl. Calculate the gravitational force between them.", false, ["*10^-5 N", "2.8"]),
         new NumQuestion("Assignment 6", "Two metal spheres each have mass of 3.0 x 10^8 kg. If the gravitational force of attraction between them is 37.5 N, what is the distance between their centers of mass?", false, ["* 10^2 m", "4.0"]),
-        new NumQuestion("Assignment 7", "Two masses are set 500 m apart. One mass has 5 times the mass of the other. If the gravitational force of attraction between them is 333.5 N, what is the magnitude of each mass? (small than big)", false, ["* 10^8 kg", "5.0"], ["*10^9 kg", "2.5"]),
+        new NumQuestion("Assignment 7", "Two masses are set 500 m apart. One mass has 5.0 times the mass of the other. If the gravitational force of attraction between them is 333.5 N, what is the magnitude of each mass? (small than big)", false, ["* 10^8 kg", "5.0"], ["*10^9 kg", "2.5"]),
         new NumQuestionIMG("Assignment 8", "If you were to place yourself between the moon and the Earth, how far away from the Earth would you have to be in order that the net force on you is zero? (3 SigDigs)", true, "images/L21/1.png", ["*10^8 m", "3.51"]),
     ], true],
     // lesson 22
@@ -892,7 +892,7 @@ let lessonTitles = [
     "Systems", // L18
     'Uniform Circular Motion', // L19
     'Vertical Uniform Circular Motion', // L20
-    'Universal Gravitation (may be inaccurate)', // L21
+    'Universal Gravitation', // L21
     'Gravitational field strength', // L22
     'Orbits and Satellites', // L23
     'Simple Harmonic Motion', // L24
