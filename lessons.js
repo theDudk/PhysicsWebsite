@@ -618,7 +618,7 @@ let lessons = [
     // lesson 22
     [[
         new NumQuestionIMG("Example 1", "What is the gravitational field strength on the surface of Neptune? (4 SigDigs)", false, "images/L21/1.png", ["N/kg", "11.17"]),
-        new NumQuestion("Example 2", "What is the gravitational field strength at a distance of 1.914 x 10^7 m above the surface of the Earth? If a person weighs 400 N on the surface, what would he weigh at this distance?", false, "images/L21/1.png", ["N/kg", "0.613"], ["N", "25"]),
+        new NumQuestionIMG("Example 2", "What is the gravitational field strength at a distance of 1.914 x 10^7 m above the surface of the Earth? If a person weighs 400 N on the surface, what would he weigh at this distance?", false, "images/L21/1.png", ["N/kg", "0.613"], ["N", "25"]),
         new NumQuestion("Practice 1", "What is the gravitational field strength on the surface of Earth? What is the gravitational field strength 100 km above the surface of Earth? ", false, ["m/s^2", "9.81"], ["m/s^2", "9.53"]),
         new NumQuestion("Practice 2", "You are on a planet whose radius is known to be about 4500 km. You then perform the following experiment: You drop a rock from a height of 10.0 m and measure the time of its fall to be 2.65 s. What is the mass of the planet?", false, ["* 10^23 kg", "8.65"]),
         new NumQuestionIMG("Assignment 1", "Calculate the acceleration due to gravity on Jupiter.", false, "images/L21/1.png", ["m/s^2", "24"]),
