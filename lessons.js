@@ -630,7 +630,7 @@ let lessons = [
     // lesson 23
     [[
         new NumQuestionIMG("Example 1", "What is the speed of orbit for a satellite orbiting Saturn if the radius of orbit is 6.43 x 10^7 m?", false, "images/L21/1.png", ["* 10^4 m/s", "2.43"]),
-        new NumQuestion("Example 2", "An artificial satellite in orbit around the Earth has a speed of 7.6 x 10^3 m/s. How far above the Earth’s surface is the satellite orbiting?", false, ["* 10^5 m", "5.3"]),
+        new NumQuestion("Example 2", "An artificial satellite in orbit around the Earth has a speed of 7.6 x 10^3 m/s. How far above the Earth’s surface is the satellite orbiting?", false, ["* 10^5 m", "5.2"]),
         new NumQuestion("Example 3", "The average distance from the centre of the Earth to the centre of the Moon is 3.85 x 10^8 m? What is the period of orbit of the Moon around the Earth?", false, ["days", "27.5"]),
         new NumQuestion("Example 4", "At what height above the surface of the Earth must a satellite be positioned in order to have a period of orbit of 10 h?", false, ["* 10^7 m", "1.7"]),
         new NumQuestion("Practice 1", "What is the speed required to place an object in orbit just above the Earth’s surface? (3SD)", false, ["* 10^3 m/s", "7.91"]),
@@ -638,7 +638,7 @@ let lessons = [
         new NumQuestion("Practice 3", "If the average distance from the Sun to the Earth is 1.49 x 10^11 m, what is the mass of the Sun?", false, ["* 10^30 kg", "1.97"]),
         new NumQuestion("Practice 4", "A geosynchronous orbit is where a satellite maintains the same position above a certain point on the Earth's surface. At what height above the Earth's surface must a satellite be positioned in order to have a geosynchronous orbit? (3SD)", false, ["* 10^7 m", "3.59"]),
         new NumQuestion("Assignment 1", "A satellite is located 250 km above the surface of the Earth. How long would it take for the satellite to complete one orbit of the Earth?", false, ["* 10^3 s", "5.36"]),
-        new NumQuestionIMG("Assignment 2", "Ariel is a moon of Uranus. If Ariel orbits Uranus at a radius of 1.91 x 10^5 km, what is the period of rotation for Ariel around Uranus (in Earth days)?", false, "images/L21/1.png", ["* 10^5 s", "2.16"]),
+        new NumQuestionIMG("Assignment 2", "Ariel is a moon of Uranus. If Ariel orbits Uranus at a radius of 1.91 x 10^5 km, what is the period of rotation for Ariel around Uranus?", false, "images/L21/1.png", ["* 10^5 s", "2.16"]),
         new NumQuestionIMG("Assignment 3", "Calculate the height above the Earth's surface for a satellite with a speed of 7.60 * 10^3 m/s?", "images/L21/1.png", false, ["* 10^5 m", "5.26"]),
         new NumQuestionIMG("Assignment 4", "If the moon is about 3.80 x 10^8 m away and its period of orbit is 2.36 x 10^6 s, calculate the speed of the moon in its orbit around the Earth. Using this result, calculate the mass of the Earth. ", false, "images/L21/1.png", ["* 10^24 kg", "5.83"]),
         new NumQuestion("Assignment 5", "The Earth is 1.49 x 10^11 m away from the Sun and it requires 365.25 days to complete one orbit. Calculate the speed of the Earth in its orbit around the Sun. Calculate the mass of the Sun.", false, ["* 10^4 m/s", "2.97"], ["* 10^30 kg", "1.97"]),
@@ -653,16 +653,16 @@ let lessons = [
     [[
         new NumQuestion("Example 1", "What is the period and frequency of a vibrating spring that requires 4 minutes and 40 seconds to complete 500 complete oscillations? (2SD)", false, ["s", "0.56"], ["Hz", "1.8"]),
         new NumQuestion("Example 2", "If a pendulum is 80.0 cm long, what is its period and frequency of vibration?", false, ["s", "1.79"], ["Hz", "0.557"]),
-        new NumQuestion("Example 3", "On the planet called Trathelmadore, Billy found that a 50.0 cm pendulum completed 20 swings in 33.6 s. What is the acceleration of gravity on Trathelmadore?", false, ["m/s^2", "6.99"]),
+        new NumQuestion("Example 3", "On the planet called Trathelmadore, Billy found that a 50.0 cm pendulum completed 20.0 swings in 33.6 s. What is the acceleration of gravity on Trathelmadore?", false, ["m/s^2", "6.99"]),
         new NumQuestion("Practice 1", "What is the period and frequency for a 0.75 m pendulum? ", false, ["s", "1.7"], ["Hz", "0.58"]),
-        new NumQuestion("Practice 2", "A pendulum requires 56.74 s to swing 20 times. What is the period, frequency, and length of the pendulum? (3SD)", false, ["s", "2.84"], ["Hz", "0.352"], ["m", "2.00"]),
+        new NumQuestion("Practice 2", "A pendulum requires 56.74 s to swing 20 times. What is the period, frequency, and length of the pendulum?", false, ["s", "2.837"], ["Hz", "0.3525"], ["m", "2.000"]),
         new NumQuestion("Practice 3", "On the moon, a simple experiment was done to measure the acceleration of gravity. The period for a 1.0 m long pendulum was measured and found to be 4.94 s. What is the acceleration due to gravity on the moon?", false, ["m/s^2", "1.6"]),
         new NumQuestion("Assignment 2", "A pendulum swings 400 times in 8.0 minutes and 20 seconds. What is its frequency and period of vibration?", false, ["Hz", "0.80"], ["s", "1.3"]),
         new NumQuestion("Assignment 3", "If a pendulum is 135 cm long: What is the period of the pendulum? How many swings will it complete in 2.5 minutes?", false, ["s", "2.3"], ["", "64"]),
         new NumQuestion("Assignment 4", "If a pendulum takes 4.0 minutes to swing 400 times, what is the length of the pendulum?", false, ["m", "0.089"]),
         new NumQuestion("Assignment 5", "What is the acceleration due to gravity on a planet where an 80 cm pendulum requires 162.15 s to swing 50 times? ", false, ["m/s^2", "3.0"]),
         new NumQuestion("Assignment 6", "A pendulum swings with a period of 5.00 s on the Moon, where the gravitationalfield strength is 1.62 m/s^2. What is the pendulum's length?", false, ["m", "1.03"]),
-        new NumQuestion("Assignment 7", "An inquisitive student brings a pendulum aboard a jet plane. The plane is in level flight at an altitude of 12.31 km. What period do you expect for a 20.0 cm pendulum?", false, ["s", "0.898"]),
+        new NumQuestion("Assignment 7", "An inquisitive student brings a pendulum aboard a jet plane. The plane is in level flight at an altitude of 12.31 km. What period do you expect for a 20.0 cm pendulum?", false, ["s", "0.899"]),
     ], true],
     // Lesson 25
     [[
