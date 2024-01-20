@@ -666,7 +666,7 @@ let lessons = [
     ], true],
     // Lesson 25
     [[
-        new NumQuestion("Example 1", "In a tire pressure gauge, the air in the tire pushes against a spring when the gauge is attached to the tire valve as in the figure above. If the spring constant is 320 N/m and the bar indicator extends 2.0 cm, what force does the air in the tire apply to the spring?", false, ["N", "6.4"]),
+        new NumQuestionIMG("Example 1", "In a tire pressure gauge, the air in the tire pushes against a spring when the gauge is attached to the tire valve as in the figure above. If the spring constant is 320 N/m and the bar indicator extends 2.0 cm, what force does the air in the tire apply to the spring?", false, "images/L25/1.png", ["N", "6.4"]),
         new NumQuestion("Example 2", "When a 2.45 kg mass is vertically hung from a spring, the spring stretches by 12.4 cm. What is the spring constant of the spring?", false, ["N/m", "194"]),
         new NumQuestion("Example 3", "What is the period of a vibrating spring (spring constant = 100 N/m) if a mass of 5.0 * 10^2 g is hung from the spring?", false, ["s", "0.44"]),
         new NumQuestion("Practice 1", "A 500.0 g mass is vertically hung from a spring. If the spring stretches by 22.75 cm, what is the spring constant?", false, ["N/m", "21.56"]),
