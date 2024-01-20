@@ -647,7 +647,7 @@ let lessons = [
         new NumQuestionIMG("Assignment 8", "In order for the Enterprise to use its transporter it must be in synchronous orbit over the beam-down point. What height above the planet Mars must the Enterprise be for a synchronous orbit? (3SD)", false, "images/L21/1.png", ["* 10^7 m", "1.69"]),
         new NumQuestionIMG("Assignment 9", "An asteroid has a mean radius of orbit of 4.8 x 10^11 m. What is its orbital period around the sun?", false, "images/L21/1.png", ["* 10^8 s", "1.8"]),
         new NumQuestionIMG("Assignment 10", "A spy satellite is located one Earth radius above the surface of the Earth. What is its period of revolution? (3SD)", false, "images/L21/1.png", ["* 10^4 s", "1.43"]),
-        new NumQuestionIMG("Assignment 11", "It is estimated that the Sun is 2.7 x 10^20 m away from the centre of the Milky Way Galaxy. If the period of revolution for the galaxy is about 200 million years, what is the speed (in km/h) of the Sun going around the center of the galaxy?", false, "images/L21/1.png", ["* 10^5 km/h", "9.7"]),
+        new NumQuestion("Assignment 11", "It is estimated that the Sun is 2.7 x 10^20 m away from the centre of the Milky Way Galaxy. If the period of revolution for the galaxy is about 200 million years, what is the speed (in km/h) of the Sun going around the center of the galaxy?", false, ["* 10^5 km/h", "9.8"]),
     ], true],
     // Lesson 24
     [[
