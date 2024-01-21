@@ -794,6 +794,9 @@ let lessons = [
         new NumQuestion("Assignment 21", "The speed and wavelength of deep water waves are 12 cm/s and 1.5 cm respectively. When the water waves enter a shallow region, their speed is reduced to 8.0 cm/s. What is the wavelength in the shallow region?", false, ["cm", '1.0']),
         new NumQuestion("Assignment 22", "The speed and wavelength of shallow water waves are 12 cm/s and 1.5 cm respectively. When the waves enter a deeper region the wavelength increases to 2.0 cm. What is the speed in the deep region?", false, ["cm/s", "16"]),
         new NumQuestion("Assignment 23", "A 12 Hz wave travels from deep to shallow water. As it does so, its speed changes from 20 cm/s to 16 cm/s. What are the wavelengths in each region?", false, ["cm (shallow)", "1.7"], ["cm (deep)", "1.3"]),
+        new NumQuestionIMG("Custom 1", "Assuming the wave has an displacement of 1cm, What will the resulting displacement be when the wave hits the fixed end?", false, "images/L29/3.png", ["cm [+]", "-1"]),
+        new NumQuestionIMG("Custom 2", "Assuming the wave has an displacement of 1cm, What will the resulting displacement be when the wave hits the loose end?", false, "images/L29/4.png", ["cm [+]", "1"]),
+        new NumQuestionIMG("Custom 3", "Assuming the waves have a amplitude of 1cm, what will the amplitude be during their interferance? After their interferance?", false, "images/L29/5.png", ["cm", "0"], ["cm", "1"]),
     ], true],
     // lesson 30
     [[
