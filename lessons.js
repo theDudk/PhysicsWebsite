@@ -800,7 +800,7 @@ let lessons = [
     ], true],
     // lesson 30
     [[
-        new NumQuestion("Example 1", "A wave is incident on boundary A and reflects to boundary B. What is the angle of reflection at boundary B? (3SD)", false, ["°", "180"]),
+        new NumQuestionIMG("Example 1", "A wave is incident on boundary A and reflects to boundary B. What is the angle of reflection at boundary B? (3SD)", false, "images/L30/6.png", ["°", "180"]),
         new NumQuestionIMG("Example 2", "A water wave travelling in deep water at 15.0 m/s enters a shallow region with an angle of incidence of 30°. If the angle of refraction is 22°, what is the speed of the wave in the shallow region?", false, "images/L30/1.png", ["m/s", "11"]),
         new NumQuestion("Example 3", "A wave travels from a region with a speed of 45 m/s into a region with a speed of 60 m/s. If the wavelength of the wave is 1.5 m in the slow region, what is the wavelength in the fast region?", false, ["m", "2.0"]),
         new MultipleChoiceQuestionIMG("Example 4", "Points S_1 and S_2 are sources of identical water waves. P is a point some distance away from the sources. PS_1 is 80 cm and PS_2 is 90 cm. Explain whether there will be destructive or constructive interference at P if the sources produce the following wavelengths: 5 cm (a)? 20 cm (b)?", false, "images/L30/2.png", ["a: constructive, b: constructive", false], ["a: destructive, b: constructive", false], ["a: constructive, b: destructive", true], ["a: destructive, b: destructive", false]),
