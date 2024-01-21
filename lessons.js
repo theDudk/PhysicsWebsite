@@ -485,7 +485,7 @@ let lessons = [
         new NumQuestion("Assignment 10", "A girl standing on the top of a roof throws a rock at 30 m/s at an angle of 30° below the horizontal. If the roof is 50 m high, how far from the base of the building will the rock land?", true, ["m", "52"]),
         new NumQuestion("Assignment 11", "A cannon is fired at 30° above the horizontal with a velocity of 200 m/s from the edge of a 125 m high cliff. Calculate where the cannonball lands on the level plain below.", true, ["* 10^3 m", "3.7"]),
         new NumQuestion("Assignment 12", "A golfer hits a golf ball with a pitching wedge from a tee that is 15 m lower than the green. If the ball leaves the tee at 35 m/s at an angle of 40° to the horizontal and it lands in the hole on the green, what is the horizontal distance from the golfer to the hole?", true, ["* 10^2 m", "1.0"]),
-        new NumQuestion("Solaro 1", "A projectile passes half its maximum height at a length of time, and again at 10.0 s after the length of time. If it is projected at an angle of exactly 30°, what is the maximum height attained by the projectile?", false, ["m", "245"])
+        new NumQuestion("Solaro 1", "A projectile passes half its maximum height, h, at a length of time, t, and again at 10.0 s after the length of time, t. If it is projected at an angle of 30°, what is the maximum height attained by the projectile?", false, ["m", "245"])
     ], true],
     // lesson 14 & 15
     [[
