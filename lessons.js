@@ -769,7 +769,7 @@ let lessons = [
         new MultipleChoiceQuestionIMG("Assignment 2a", "What point is a crest", false, "images/L29/1.png", ["A", false], ["B", true], ["C", false], ["D", false]),
         new MultipleChoiceQuestionIMG("Assignment 2b", "What point is a trough", false, "images/L29/1.png", ["A", false], ["B", false], ["C", false], ["D", true]),
         new MultipleChoiceQuestionIMG("Assignment 2c", "What point is 1 wavelength away from point C", false, "images/L29/1.png", ["E", false], ["F", false], ["G", true], ["H", false]),
-        new MultipleChoiceQuestionIMG("Assignment 2d", "What point is a one half of a wavelength from point B", false, "images/L29/1.png", ["D", false], ["F", false], ["G", true], ["H", false]),
+        new MultipleChoiceQuestionIMG("Assignment 2d", "What point is a one half of a wavelength from point B", false, "images/L29/1.png", ["D", true], ["F", false], ["G", false], ["H", false]),
         new NumQuestionIMG("Assignment 2e", "What is the wavelength (1 square = 1 cm)", false, "images/L29/1.png", ["cm", "20"]),
         new NumQuestionIMG("Assignment 2f", "What is the amplitude (1 square = 1 cm)", false, "images/L29/1.png", ["cm", "6"]),
         new NumQuestionIMG("Assignment 2g", "If the frequency is equal to 40.0 Hz, what is the speed of the wave? (1 square = 1 cm)", false, "images/L29/1.png", ["cm/s", "800"]),
